@@ -237,24 +237,17 @@ class Logo extends Phaser.Scene {
     }
     preload(){
         this.load.image('thing', './assets/logo.png');
+        this.load.image('log', './assets/ltext.png');
     }
     create(){
         this.add.image(600,500,'thing')
+        this.add.image(600,680,'log')
+
         this.graphics = this.add.graphics();
 
-
-        this.textObject = this.add.text(
-            500, //x
-            590,//y
-            "Fish Fish", //text
-            {
-                font: "40px Arial",
-                color: "#ffffff",
-            } //style
-        );
         this.textObject = this.add.text(
             510, //x
-            630,//y
+            730,//y
             "Games", //text
             {
                 font: "40px Arial",
@@ -263,7 +256,7 @@ class Logo extends Phaser.Scene {
         );
         this.textObject = this.add.text(
             500, //x
-            680,//y
+            780,//y
             "Presents", //text
             {
                 font: "40px Arial",
